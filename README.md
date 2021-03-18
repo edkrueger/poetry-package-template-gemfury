@@ -11,6 +11,10 @@ To load `.envrc`, one cloud just run `.envrc` as a shell script, but direnv will
 To install direnv on a mac running zsh, use brew to install with `brew install direnv` and hook in into your shell by adding `eval "$(direnv hook zsh)"` to your `.zshrc` file. For other install instructions see: https://direnv.net/.  
 To allow direnv to load `.envrc` in a directory run `direnv allow`.  
 
+### Push to PyPI
+Run `poetry config repositories.$PYPI_REPO_NAME $PYPI_REPO_URL` to set a reference to the PyPI repository's URL for the given name.  Run `poetry config http-basic.$PYPI_REPO_NAME $PYPI_TOKEN $PYPI_TOKEN` to setup authentication to the PiPY repository for the same name. Then, run `poetry publish --build --repository $PYPI_REPO_NAME` to build and push the package to the PyPI repository.
+
+
 ## Dev Instructions
 Run `poetry install` to install the env.  
 Run `poetry run pre-commit install` to initialize the git hooks.  
