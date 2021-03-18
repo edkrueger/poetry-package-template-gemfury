@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "poetry-template"
+name = "poetrypackagetemplate"
 version = "0.1.0"
 description = ""
 authors = ["edkrueger <edkrueger@gmail.com>"]

@@ -1,7 +1,7 @@
 """
 Tests resc.py.
 """
-from resc.demo import add, sub
+from poetrypackagetemplate.demo import add, sub
 
 
 def test_add():
