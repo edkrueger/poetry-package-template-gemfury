@@ -1,4 +1,7 @@
 # poetry-template
+How to push a Poetry package to a private PyPI server (Gemfury)  
+
+To see how to pull a package from a private PyPI repository with Pipenv see: https://github.com/edkrueger/poetry-package-template.  
 
 ## Notes
 When using this template and making poetry packages in general, it is easiest to have the name of the directory your package is in and the name in `pyproject.toml` match. Because Python imports do not like dashes and underscores are uncommon in package names, I'd recommend using neither.  
